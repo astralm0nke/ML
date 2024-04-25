@@ -35,6 +35,9 @@ with components TfidfVectorizer() and LinearSVC()
 
 Text feature-Inverse document frequency vectorizes term frequency, then adjusts weights by inverse document frequency.
 Unique words get heavier weight, words like def/indef articels get lighter weight.
+
+Linear Support Vector Classifier is basically a 1-kernel support vector machine (SVM),
+one of the most common ML/text classification algorithms.
 '''
 text_clf = Pipeline([('tfidf', TfidfVectorizer()), ('clf', LinearSVC())])
 
